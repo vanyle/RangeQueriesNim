@@ -1,4 +1,4 @@
-name: GitHub Documentation
+name: Generating Documentation
 on: [push]
 
 jobs:

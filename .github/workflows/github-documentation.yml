@@ -1,0 +1,27 @@
+name: GitHub Documentation
+on: [push]
+
+jobs:
+  Documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installing Nim
+        run: sudo apt-get install nim
+
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Generate the documentation
+        run: nim doc --project --git.url:https://github.com/vanyle/RangeQueriesNim --index:on --outdir:docs rangequeries.nim
+
+      - name: Save the documentation
+        uses: actions/upload-artifact@v2
+        with:
+          name: documentation
+          path: docs
+
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs

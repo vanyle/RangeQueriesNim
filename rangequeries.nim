@@ -34,8 +34,6 @@ runnableExamples:
     proc add(a, b: int): int = a+b
     var st = toSegmentTree[int](nbrs, add)
 
-    proc sum(a,b: int): int = (b-a+1) * (a+b) div 2
-
     echo st.query(3,5) # 4 + 5 + 6 = 17
 
 

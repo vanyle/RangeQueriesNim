@@ -92,6 +92,7 @@ proc build[T](rq: var SegmentTree[T], v, tl, tr: int, arr: seq[T]) =
 
 proc toSegmentTree*[T](arr: seq[T], operator: proc(a, b: T): T): SegmentTree[T] =
     ## Create a range query from a sequence. The elements inside the seq are copied.
+    ## Takes O(n) time where `n = arr.len`
     var rq: SegmentTree[T]
     rq.data = newSeq[T](arr.len * 4)
     rq.size = arr.len

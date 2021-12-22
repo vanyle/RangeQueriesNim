@@ -911,10 +911,6 @@ function main() {
 <dd>
 
 
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L42"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L42" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -927,10 +923,6 @@ class="link-seesrc" target="_blank">Source</a>
 <dd>
 
 Create a range query from a sequence. The elements inside the seq are copied.
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L93"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L93" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="$,SegmentTree[T]"></a>
@@ -941,10 +933,6 @@ Convert the segment tree to a string, mainly for debug purposes.
 <p><strong class="examples_text">Examples:</strong></p>
 <pre class="listing"><span class="Identifier">echo</span> <span class="Identifier">toSegmentTree</span><span class="Other">(</span><span class="Operator">@</span><span class="Other">[</span><span class="DecNumber">1</span><span class="Other">,</span> <span class="DecNumber">2</span><span class="Other">,</span> <span class="DecNumber">3</span><span class="Other">]</span><span class="Other">,</span> <span class="Keyword">proc</span> <span class="Other">(</span><span class="Identifier">a</span><span class="Other">,</span> <span class="Identifier">b</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span>
   <span class="Identifier">max</span><span class="Other">(</span><span class="Identifier">a</span><span class="Other">,</span> <span class="Identifier">b</span><span class="Other">)</span><span class="Other">)</span></pre>
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L125"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L125" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[]=,SegmentTree[T],int,T"></a>
@@ -956,10 +944,6 @@ Edit an element at a specific index (in O(log(n)) time)
 <pre class="listing"><span class="Keyword">var</span> <span class="Identifier">t</span> <span class="Other">=</span> <span class="Identifier">toSegmentTree</span><span class="Other">(</span><span class="Operator">@</span><span class="Other">[</span><span class="DecNumber">1</span><span class="Other">,</span> <span class="DecNumber">2</span><span class="Other">,</span> <span class="DecNumber">3</span><span class="Other">]</span><span class="Other">,</span> <span class="Keyword">proc</span> <span class="Other">(</span><span class="Identifier">a</span><span class="Other">,</span> <span class="Identifier">b</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span>
   <span class="Identifier">max</span><span class="Other">(</span><span class="Identifier">a</span><span class="Other">,</span> <span class="Identifier">b</span><span class="Other">)</span><span class="Other">)</span>
 <span class="Identifier">t</span><span class="Other">[</span><span class="DecNumber">1</span><span class="Other">]</span> <span class="Other">=</span> <span class="DecNumber">5</span></pre>
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L134"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L134" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="len,SegmentTree[T]"></a>
@@ -967,10 +951,6 @@ class="link-seesrc" target="_blank">Source</a>
 <dd>
 
 Return the number of elements in the Segment Tree
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L143"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L143" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="[],SegmentTree[T],int"></a>
@@ -978,10 +958,6 @@ class="link-seesrc" target="_blank">Source</a>
 <dd>
 
 Access an element at a specific index (in O(log(n)) time)
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L147"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L147" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="query,SegmentTree[T],int,int"></a>
@@ -993,10 +969,6 @@ Apply the operation of the segment tree over the range [start..endp] in O(log(n)
 <pre class="listing"><span class="Keyword">var</span> <span class="Identifier">t</span> <span class="Other">=</span> <span class="Identifier">toSegmentTree</span><span class="Other">(</span><span class="Operator">@</span><span class="Other">[</span><span class="DecNumber">1</span><span class="Other">,</span> <span class="DecNumber">2</span><span class="Other">,</span> <span class="DecNumber">3</span><span class="Other">]</span><span class="Other">,</span> <span class="Keyword">proc</span> <span class="Other">(</span><span class="Identifier">a</span><span class="Other">,</span> <span class="Identifier">b</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span>
   <span class="Identifier">a</span> <span class="Operator">+</span> <span class="Identifier">b</span><span class="Other">)</span>
 <span class="Identifier">echo</span> <span class="Identifier">t</span><span class="Other">.</span><span class="Identifier">query</span><span class="Other">(</span><span class="DecNumber">0</span><span class="Other">,</span> <span class="DecNumber">2</span><span class="Other">)</span></pre>
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L152"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L152" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="queryIdx,SegmentTree[T],int,int"></a>
@@ -1024,10 +996,6 @@ Get the index of the most &quot;operatory&quot; element of segment tree in the r
 <span class="Keyword">var</span> <span class="Identifier">st2</span> <span class="Other">=</span> <span class="Identifier">toSegmentTree</span><span class="Other">[</span><span class="Identifier">int</span><span class="Other">]</span><span class="Other">(</span><span class="Identifier">nbrs</span><span class="Other">,</span> <span class="Identifier">sayZero</span><span class="Other">)</span>
 <span class="Identifier">st2</span><span class="Other">[</span><span class="DecNumber">11</span><span class="Other">]</span> <span class="Other">=</span> <span class="DecNumber">0</span>
 <span class="Identifier">assert</span> <span class="Identifier">st2</span><span class="Other">.</span><span class="Identifier">queryIdx</span><span class="Other">(</span><span class="DecNumber">0</span><span class="Other">,</span> <span class="DecNumber">19</span><span class="Other">)</span> <span class="Operator">==</span> <span class="DecNumber">11</span></pre>
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L179"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L179" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -1040,10 +1008,6 @@ class="link-seesrc" target="_blank">Source</a>
 <dd>
 
 Iterate over the segment tree in O(n) time.
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L111"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L111" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="pairs.i,SegmentTree[T]"></a>
@@ -1051,10 +1015,6 @@ class="link-seesrc" target="_blank">Source</a>
 <dd>
 
 Iterate over the segment tree in O(n) time.
-&nbsp;&nbsp;<a
-href="https://github.com/vanyle/RangeQueriesNim/tree/version-1-0/rangequeries.nim#L118"
-class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/vanyle/RangeQueriesNim/edit/devel/rangequeries.nim#L118" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -1067,7 +1027,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small>Made with Nim. Generated: 2021-13-22 18:01:18 UTC</small>
+        <small>Made with Nim. Generated: 2021-13-22 18:13:50 UTC</small>
       </div>
     </div>
   </div>

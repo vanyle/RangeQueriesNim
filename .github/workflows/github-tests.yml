@@ -2,7 +2,7 @@ name: Nimble test
 on: [push]
 
 jobs:
-  Documentation:
+  Tests:
     runs-on: ubuntu-latest
     steps:
       - name: Installing Nim

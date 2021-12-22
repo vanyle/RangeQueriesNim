@@ -1,7 +1,6 @@
 # RangeQueries
 
 ![Documentation Generation](https://github.com/vanyle/RangeQueriesNim/actions/workflows/github-documentation.yml/badge.svg)
-
 ![Tests](https://github.com/vanyle/RangeQueriesNim/actions/workflows/github-tests.yml/badge.svg)
 
 This nim package implements "SegmentTree", a data structure that

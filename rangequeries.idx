@@ -1,0 +1,10 @@
+SegmentTree	rangequeries.html#SegmentTree	rangequeries: SegmentTree	
+toSegmentTree	rangequeries.html#toSegmentTree,seq[T][T],proc(T,T)	rangequeries: toSegmentTree[T](arr: seq[T]; operator: proc (a, b: T): T): SegmentTree[T]	
+items	rangequeries.html#items.i,SegmentTree[T]	rangequeries: items[T](rq: SegmentTree[T]): T	
+pairs	rangequeries.html#pairs.i,SegmentTree[T]	rangequeries: pairs[T](rq: SegmentTree[T]): (int, T)	
+`$`	rangequeries.html#$,SegmentTree[T]	rangequeries: `$`[T](rq: SegmentTree[T]): string	
+`[]=`	rangequeries.html#[]=,SegmentTree[T],int,T	rangequeries: `[]=`[T](rq: var SegmentTree[T]; idx: int; val: T)	
+len	rangequeries.html#len,SegmentTree[T]	rangequeries: len[T](rq: SegmentTree[T]): int	
+`[]`	rangequeries.html#[],SegmentTree[T],int	rangequeries: `[]`[T](rq: SegmentTree[T]; idx: int): T	
+query	rangequeries.html#query,SegmentTree[T],int,int	rangequeries: query[T](rq: SegmentTree[T]; start, endp: int): T	
+queryIdx	rangequeries.html#queryIdx,SegmentTree[T],int,int	rangequeries: queryIdx[T](rq: SegmentTree[T]; start, endp: int): int	

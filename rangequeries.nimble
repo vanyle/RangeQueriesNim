@@ -4,7 +4,7 @@ version       = "0.1.0"
 author        = "Antoine Delègue"
 description   = "An implementation of Range Queries in Nim"
 license       = "MIT"
-srcDir        = "."
+srcDir        = "src"
 
 
 # Dependencies

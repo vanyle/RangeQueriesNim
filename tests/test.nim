@@ -1,4 +1,4 @@
-import ../rangequeries
+import ../src/rangequeries
 import random, unittest
 
 
